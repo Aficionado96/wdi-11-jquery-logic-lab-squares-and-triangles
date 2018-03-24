@@ -1,3 +1,21 @@
 .line {
 	display: inline-block; 
+	/*margin: -10;*/
+	/*border: 0;*/
+	/*font-size: 0;*/
+}
+/*#checkerboard{
+	width: 240px;
+}*/
+
+
+
+.space{
+	height: 30px;
+
+
+}
+
+.noSpace{
+	margin:-4px;
 }
