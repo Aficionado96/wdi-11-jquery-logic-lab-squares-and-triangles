@@ -8,6 +8,8 @@ red = 'rgb(255,0,0)';
 
 black = 'rgb(0,0,0)';
 
+white = 'rgb(255,255,255)';
+
 
 
 const generateDivs = (color,checkerboardId)=>{
@@ -86,10 +88,52 @@ for(let i = 0; i < 4; i ++){
 
 
 //3
-//Bonus
+//Bonus Pyramids
+
+//To Make spaces for each row
+const makeInvisibleTriangle= (num)=>{
+	
+	for(let i = num; i >0 ; i --){
+		$('<div>').addClass('whiteTri line').appendTo($('.pyramid'))
+	}
+
+}
 
 
 
+const generatePyramid = (num)=>{
+
+
+	// Makes Rows num times
+	for(let i = 0; i < num; i ++){
+
+		
+		makeInvisibleTriangle(num-i);
+
+
+		//Makes Triangle
+		for(let j = 0; j < i+1; j ++){
+
+			
+
+			$('<div>').addClass('redTri line').appendTo($('.pyramid'))
+
+		
+
+		}
+
+
+		//Makes Row
+		$('<div>').addClass('noSpace').appendTo($('.pyramid'))
+
+
+	}
+
+
+}
+
+
+generatePyramid(6);
 
 
 

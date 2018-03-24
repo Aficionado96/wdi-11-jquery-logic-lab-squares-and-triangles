@@ -1,12 +1,12 @@
 .line {
-	display: inline-block; 
+	display: inline-block;
+
+
 	/*margin: -10;*/
 	/*border: 0;*/
 	/*font-size: 0;*/
 }
-/*#checkerboard{
-	width: 240px;
-}*/
+
 
 
 
@@ -19,3 +19,27 @@
 .noSpace{
 	margin:-4px;
 }
+
+
+.redTri {
+	height: 0px;
+	width:0px;
+	border-left: 30px solid transparent;
+	border-right:30px solid transparent;
+	border-bottom:30px solid red;
+
+	
+
+}
+
+
+.whiteTri {
+	height: 0px;
+	width:0px;
+	border-left: 30px solid transparent;
+	border-right:0px solid transparent;
+	border-top:30px solid white;
+
+}
+
+
